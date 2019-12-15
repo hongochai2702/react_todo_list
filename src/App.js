@@ -38,10 +38,12 @@ class App extends Component {
 		});
 	}
 
+	// Delete
 	delTodo = (id) => {
 		this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] });
 	}
 
+	// Add
 	addToDo = (title) => {
 		const newTodo = {
 			id : uuid.v4(),
